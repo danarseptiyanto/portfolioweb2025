@@ -7,6 +7,7 @@ use Filament\Tables;
 use App\Models\Project;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
+use Illuminate\Support\Str;
 use Filament\Resources\Resource;
 use Filament\Forms\Components\FileUpload;
 use Illuminate\Database\Eloquent\Builder;
@@ -31,8 +32,14 @@ class ProjectResource extends Resource
                         Forms\Components\Grid::make(2)
                             ->schema([
                                 Forms\Components\TextInput::make('title'),
-                                Forms\Components\TextInput::make('slug'),
-                                Forms\Components\DateTimePicker::make('project-date'),
+                                Forms\Components\TextInput::make('slug')
+                                    ->required()
+                                    ->rule('alpha_dash')
+                                    ->afterStateUpdated(
+                                        fn($state, callable $set) =>
+                                        $set('slug', Str::slug($state)) // Format only when slug is updated manually
+                                    ),
+                                Forms\Components\TextInput::make('project-date'),
                                 Forms\Components\DateTimePicker::make('date-created'),
                                 Forms\Components\TextInput::make('client'),
                                 Forms\Components\TextInput::make('website'),
