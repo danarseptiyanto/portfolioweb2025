@@ -1,58 +1,29 @@
-import { Button, Modal } from "flowbite-react";
 import { Link } from "@inertiajs/react";
-import { useState } from "react";
+import { RiSunLine, RiMenu4Line } from "@remixicon/react";
 export default function Home() {
-    const [openModal, setOpenModal] = useState(false);
     return (
-        <div>
-            <Link href="/about">About</Link>
-            <h1 className="bg-red-300 text-3xl dark:text-sm dark:text-white">
-                Homexxx
-                <Button>Click me</Button>
-            </h1>
-            <div>
-                <Button onClick={() => setOpenModal(true)}>Toggle modal</Button>
-                <Modal show={openModal} onClose={() => setOpenModal(false)}>
-                    <Modal.Header className="py-0">
-                        <span className="text-sm text-red-500">
-                            Terms of Servicex
-                        </span>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <div className="space-y-6">
-                            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                With less than a month to go before the European
-                                Union enacts new consumer privacy laws for its
-                                citizens, companies around the world are
-                                updating their terms of service agreements to
-                                comply.
-                            </p>
-                            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                                The European Union’s General Data Protection
-                                Regulation (G.D.P.R.) goes into effect on May 25
-                                and is meant to ensure a common set of data
-                                rights in the European Union. It requires
-                                organizations to notify users as soon as
-                                possible of high-risk data breaches that could
-                                personally affect them.
-                            </p>
-                        </div>
-                    </Modal.Body>
-                    <Modal.Footer>
-                        <Button
-                            className="bg-red-500"
-                            onClick={() => setOpenModal(false)}
-                        >
-                            I accept
-                        </Button>
-                        <Button
-                            color="gray"
-                            onClick={() => setOpenModal(false)}
-                        >
-                            Decline
-                        </Button>
-                    </Modal.Footer>
-                </Modal>
+        <div className="mx-auto mt-12 flex max-w-screen-xl items-center justify-between px-5">
+            <div className="flex items-center gap-2">
+                <div className="aspect-square bg-slate-400 p-2">
+                    <img src="/img/ui/logo-navbar.svg" alt="Logo" />
+                </div>
+                <h1 className="text-2xl">
+                    <b>danar</b>sept
+                </h1>
+            </div>
+            <div className="flex gap-2">
+                <button
+                    type="button"
+                    className="inline-flex items-center gap-1.5 rounded-full border border-black bg-white px-5 py-2.5 font-semibold hover:bg-slate-100 hover:text-slate-700"
+                >
+                    <RiSunLine className="-ms-1" size={18} /> Light
+                </button>
+                <button
+                    type="button"
+                    className="aspect-square gap-1.5 rounded-full border border-black bg-black p-3.5 font-semibold text-white hover:bg-slate-800"
+                >
+                    <RiMenu4Line className="" size={18} />
+                </button>
             </div>
         </div>
     );

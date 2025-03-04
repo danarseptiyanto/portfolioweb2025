@@ -12,9 +12,12 @@ export default {
         flowbite.content(),
     ],
     theme: {
+        maxWidth: {
+            "screen-xl": "1285px", // Change from 1280px to 1285px
+        },
         extend: {
             fontFamily: {
-                sans: ["Figtree", ...defaultTheme.fontFamily.sans],
+                sans: ["Inter", ...defaultTheme.fontFamily.sans],
             },
         },
     },
