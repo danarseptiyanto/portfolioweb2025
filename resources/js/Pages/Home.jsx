@@ -20,9 +20,9 @@ export default function Home() {
                 </button>
                 <button
                     type="button"
-                    className="aspect-square gap-1.5 rounded-full border border-black bg-black p-3.5 font-semibold text-white hover:bg-slate-800"
+                    className="aspect-square gap-1.5 rounded-full border border-black bg-black p-2.5 font-semibold text-white hover:bg-slate-800"
                 >
-                    <RiMenu4Line className="" size={18} />
+                    <RiMenu4Line className="" size={25} />
                 </button>
             </div>
         </div>

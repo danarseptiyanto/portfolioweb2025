@@ -19,6 +19,16 @@ export default {
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],
             },
+            colors: {
+                "l-primary": "#FF2D20",
+                "l-secondary": "#212529",
+                "l-bg": "#F8F9FA",
+                "l-accent": "#E9ECEF",
+                "d-primary": "#FF2D20",
+                "d-secondary": "#212529",
+                "d-bg": "#F8F9FA",
+                "d-accent": "#E9ECEF",
+            },
         },
     },
     plugins: [flowbite.plugin()],
