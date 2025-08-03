@@ -3,16 +3,16 @@ import ThemeToggleButton from "./Buttons/ThemeToggleButton";
 
 const Navbar = () => {
     return (
-        <div className="mx-auto mt-12 flex max-w-screen-xl items-center justify-between px-5">
+        <div className="mx-auto mt-8 flex max-w-screen-xl items-center justify-between px-5 md:mt-12">
             <div className="flex items-center gap-2">
-                <div className="aspect-square bg-l-accent p-2">
+                <div className="aspect-square rounded-full bg-l-accent p-2.5 md:rounded-none md:p-2">
                     <img src="/img/ui/logo-navbar.svg" alt="Logo" />
                 </div>
-                <h1 className="text-2xl text-l-primary">
+                <h1 className="text-xl text-l-primary md:text-2xl">
                     <b>danar</b>sept
                 </h1>
             </div>
-            <div className="flex gap-2">
+            <div className="flex gap-1 md:gap-2">
                 <ThemeToggleButton />
                 <button
                     type="button"
