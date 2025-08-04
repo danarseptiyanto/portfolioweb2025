@@ -1,4 +1,4 @@
-import { RiMenu4Line } from "@remixicon/react";
+import { RiMenu4Line } from "react-icons/ri";
 import ThemeToggleButton from "./Buttons/ThemeToggleButton";
 
 const Navbar = () => {

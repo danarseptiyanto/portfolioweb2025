@@ -6,14 +6,16 @@ import ProjectsGrid from "../../components/Home/ProjectsGrid";
 const Projects = () => {
     return (
         <>
-            <div className="mx-auto mb-10 mt-12 flex max-w-screen-xl items-center justify-between px-5">
-                <span className="text-[57px] font-semibold">Featured Work</span>
+            <div className="mx-auto mb-4 mt-9 flex max-w-screen-xl items-center justify-between px-5 md:mb-10 md:mt-12">
+                <span className="text-xl font-semibold md:text-[57px]">
+                    Featured Work
+                </span>
                 <BtnPrimary>
-                    Show More{" "}
+                    <span className="hidden md:block">Show More </span>
                     <RiArrowRightLine className="text-white" size={22} />
                 </BtnPrimary>
             </div>
-            <div className="mx-auto grid max-w-screen-xl grid-cols-2 gap-7 px-5">
+            <div className="gird-cols-1 mx-auto grid max-w-screen-xl gap-5 px-5 md:grid-cols-2 md:gap-7">
                 <ProjectsGrid
                     title="Project 1"
                     img="thumbnail-project.png"

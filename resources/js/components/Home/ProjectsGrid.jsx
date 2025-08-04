@@ -22,12 +22,12 @@ const ProjectsGrid = ({ title, img, slug }) => {
             onMouseLeave={() => !isMobile && setIsHovered(false)}
         >
             <img
-                className="rounded-3xl bg-gray-200"
+                className="rounded-2xl bg-gray-200 md:rounded-3xl"
                 src={`/img/ui/${img}`}
                 alt="Thumbnail"
             />
             <div
-                className={`absolute inset-0 flex items-end justify-between rounded-3xl bg-opacity-50 bg-gradient-to-t from-black/50 via-transparent to-transparent p-7 text-lg font-semibold text-white transition-opacity duration-300 ${
+                className={`absolute inset-0 flex items-end justify-between rounded-2xl bg-opacity-50 bg-gradient-to-t from-black/50 via-transparent to-transparent p-7 text-lg font-semibold text-white transition-opacity duration-300 md:rounded-3xl ${
                     isHovered || isMobile ? "opacity-100" : "opacity-0"
                 }`}
             >
