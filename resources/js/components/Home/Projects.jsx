@@ -20,21 +20,25 @@ const Projects = () => {
                     title="Project 1"
                     img="thumbnail-project.png"
                     slug="#"
+                    tag="Web Development"
                 />
                 <ProjectsGrid
                     title="Project 1"
                     img="thumbnail-project2.png"
                     slug="#"
+                    tag="Web Development"
                 />
                 <ProjectsGrid
                     title="Project 1"
                     img="thumbnail-project2.png"
                     slug="#"
+                    tag="Web Development"
                 />
                 <ProjectsGrid
                     title="Project 1"
                     img="thumbnail-project.png"
                     slug="#"
+                    tag="Web Development"
                 />
             </div>
         </>

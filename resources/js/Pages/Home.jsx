@@ -2,6 +2,7 @@ import { Head } from "@inertiajs/react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
+import Blog from "../components/Home/Blog";
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
             <Navbar />
             <Hero />
             <Projects />
+            <Blog />
         </>
     );
 }

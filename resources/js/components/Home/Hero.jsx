@@ -25,7 +25,7 @@ const Hero = () => {
                     Lets Talk{" "}
                     <RiArrowRightUpLine className="text-[20px] text-white md:text-[24px]" />
                 </BtnPrimary>
-                <p className="max-w-[1030px] text-l-secondary md:text-xl">
+                <p className="max-w-[1060px] text-l-secondary md:text-xl">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sedare do eiusmod tempor incididunt ut labore et magna
                     aliqua. Ut enim ad minim veniam!
