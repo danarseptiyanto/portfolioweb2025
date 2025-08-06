@@ -17,25 +17,25 @@ const Projects = () => {
             </div>
             <div className="gird-cols-1 mx-auto grid max-w-screen-xl gap-5 px-5 md:grid-cols-2 md:gap-7">
                 <ProjectsGrid
-                    title="Project 1"
+                    title="Belajar Era Digital"
                     img="thumbnail-project.png"
-                    slug="#"
+                    slug="project"
                     tag="Web Development"
                 />
                 <ProjectsGrid
-                    title="Project 1"
+                    title="BEDlink"
                     img="thumbnail-project2.png"
                     slug="#"
                     tag="Web Development"
                 />
                 <ProjectsGrid
-                    title="Project 1"
+                    title="TicyKit"
                     img="thumbnail-project2.png"
                     slug="#"
                     tag="Web Development"
                 />
                 <ProjectsGrid
-                    title="Project 1"
+                    title="Danar&Co."
                     img="thumbnail-project.png"
                     slug="#"
                     tag="Web Development"

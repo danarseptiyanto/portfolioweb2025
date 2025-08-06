@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return inertia('About');
 });
+
+Route::get('/project', function () {
+    return inertia('Project');
+});

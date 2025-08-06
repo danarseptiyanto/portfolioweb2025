@@ -38,8 +38,14 @@ const Hero = () => {
                         href="https://github.com/danarsept"
                         text="github"
                     />
-                    <BtnLink href="#" text="Instagram" />
-                    <BtnLink href="#" text="dribbble" />
+                    <BtnLink
+                        href="https://www.instagram.com/dnrsept/"
+                        text="Instagram"
+                    />
+                    <BtnLink
+                        href="https://dribbble.com/danarsepti"
+                        text="dribbble"
+                    />
                 </div>
             </div>
         </>
