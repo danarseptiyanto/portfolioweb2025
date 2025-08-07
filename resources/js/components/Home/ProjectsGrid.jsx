@@ -16,7 +16,7 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
             >
                 <img
                     className="rounded-xl bg-gray-200 md:rounded-3xl"
-                    src={`/img/ui/${img}`}
+                    src={`/storage/${img}`}
                     alt="Thumbnail"
                 />
                 <div
@@ -24,10 +24,16 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
                         isHovered ? "opacity-100" : "opacity-0"
                     }`}
                 >
-                    <Link href={slug} className="pointer-events-auto">
+                    <Link
+                        href={`/project/${slug}`}
+                        className="pointer-events-auto"
+                    >
                         {title}
                     </Link>
-                    <Link href={slug} className="pointer-events-auto">
+                    <Link
+                        href={`/project/${slug}`}
+                        className="pointer-events-auto"
+                    >
                         <button
                             type="button"
                             className="inline-flex items-center gap-1 rounded-full bg-l-accent px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
@@ -44,7 +50,7 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
             <div className="mt-4 flex items-center justify-between md:mt-5">
                 <div>
                     <Link
-                        href={slug}
+                        href={`/project/${slug}`}
                         className="pointer-events-auto text-lg font-bold leading-none text-l-primary md:text-2xl"
                     >
                         {title}
@@ -53,9 +59,14 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
                         {tag}
                     </p>
                 </div>
-                <BtnSecondary>
-                    <RiArrowRightLine className="text-l-primary" size={22} />
-                </BtnSecondary>
+                <Link href={`/project/${slug}`}>
+                    <BtnSecondary>
+                        <RiArrowRightLine
+                            className="text-l-primary"
+                            size={22}
+                        />
+                    </BtnSecondary>
+                </Link>
             </div>
         </div>
     );

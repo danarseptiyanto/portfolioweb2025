@@ -4,7 +4,7 @@ import BtnPrimary from "../Buttons/BtnPrimary";
 
 const Blog = () => {
     return (
-        <div className="mx-auto my-16 flex max-w-screen-xl flex-col justify-between px-5 md:flex-row">
+        <div className="mx-auto my-20 flex max-w-screen-xl flex-col justify-between px-5 md:flex-row">
             <div className="mb-5 flex items-center justify-between md:items-start">
                 <p className="w-60 text-xl font-bold leading-tight md:text-[32px]">
                     Writing and News

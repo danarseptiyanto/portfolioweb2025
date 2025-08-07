@@ -6,9 +6,9 @@ const Navbar = () => {
     return (
         <div className="mx-auto flex max-w-screen-xl items-center justify-between px-5 pt-8 md:pt-12">
             <Link href="/" className="flex items-center gap-2">
-                <a className="aspect-square rounded-full bg-l-accent p-2.5 md:rounded-none md:p-2">
+                <div className="aspect-square rounded-full bg-l-accent p-2.5 md:rounded-none md:p-2">
                     <img src="/img/ui/logo-navbar.svg" alt="Logo" />
-                </a>
+                </div>
                 <h1 className="text-xl text-l-primary md:text-2xl">
                     <b>danar</b>sept
                 </h1>
