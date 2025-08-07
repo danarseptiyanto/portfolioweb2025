@@ -12,13 +12,14 @@ export default {
         flowbite.content(),
     ],
     theme: {
-        maxWidth: {
-            "screen-xl": "1285px", // Change from 1280px to 1285px
-        },
         extend: {
             fontFamily: {
                 sans: ["Inter", ...defaultTheme.fontFamily.sans],
                 lora: ["Lora"],
+            },
+            maxWidth: {
+                "screen-xl": "1285px", // Change from 1280px to 1285px
+                "screen-lg": "1029px",
             },
             colors: {
                 "l-primary": "#030712",
@@ -34,5 +35,5 @@ export default {
             },
         },
     },
-    plugins: [flowbite.plugin()],
+    plugins: [flowbite.plugin(), require("@tailwindcss/typography")],
 };
