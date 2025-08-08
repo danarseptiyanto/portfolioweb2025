@@ -36,7 +36,7 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
                     >
                         <button
                             type="button"
-                            className="inline-flex items-center gap-1 rounded-full bg-l-accent px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800"
+                            className="inline-flex items-center gap-1 rounded-full bg-l-accent px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-blue-800 dark:bg-d-accent"
                         >
                             Details{" "}
                             <RiArrowRightLine

@@ -53,7 +53,7 @@ const Content = ({ project }) => {
                         >
                             <button
                                 type="button"
-                                className="inline-flex h-fit w-full items-center justify-center gap-0.5 rounded-full border bg-l-accent px-4 py-2.5 text-sm text-white hover:bg-l-accent/90 md:px-5 md:py-2.5 md:text-lg"
+                                className="inline-flex h-fit w-full items-center justify-center gap-0.5 rounded-full border bg-l-accent px-4 py-2.5 text-sm text-white hover:bg-l-accent dark:bg-d-accent dark:bg-d-accent/90 md:px-5 md:py-2.5 md:text-lg"
                             >
                                 Visit Website{" "}
                                 <RiArrowRightUpLine className="text-[24px] text-white md:text-[26px]" />

@@ -23,7 +23,7 @@ export default function ThemeToggleButton() {
         <button
             type="button"
             onClick={toggleTheme}
-            className="inline-flex items-center gap-0 rounded-full border border-l-primary bg-none px-3.5 py-2.5 font-semibold text-l-primary hover:bg-slate-100 hover:text-slate-700 dark:bg-slate-700 dark:hover:bg-slate-700 dark:hover:text-white md:gap-1.5 md:px-5"
+            className="inline-flex items-center gap-0 rounded-full border border-l-primary bg-none px-3.5 py-2.5 font-semibold text-l-primary hover:bg-slate-100 hover:text-slate-700 dark:border-d-primary dark:text-d-primary dark:hover:bg-d-primary/10 md:gap-1.5 md:px-5"
         >
             {isDark ? (
                 <>

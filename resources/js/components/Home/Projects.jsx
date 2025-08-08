@@ -6,7 +6,7 @@ import ProjectsGrid from "../../components/Home/ProjectsGrid";
 const Projects = ({ projects }) => {
     return (
         <>
-            <div className="mx-auto mb-4 mt-9 flex max-w-screen-xl items-center justify-between px-5 md:mb-10 md:mt-12">
+            <div className="mx-auto mb-4 mt-9 flex max-w-screen-xl items-center justify-between px-5 text-l-primary dark:text-d-primary md:mb-10 md:mt-12">
                 <span className="text-xl font-semibold md:text-[57px]">
                     Featured Work
                 </span>
