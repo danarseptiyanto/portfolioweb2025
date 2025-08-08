@@ -15,7 +15,7 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
                 onMouseLeave={() => setIsHovered(false)}
             >
                 <img
-                    className="rounded-xl bg-gray-200 md:rounded-3xl"
+                    className="rounded-xl bg-gray-200 from-[#E8D2DC] via-gray-200 to-gray-200 dark:bg-gradient-to-br md:rounded-3xl"
                     src={`/storage/${img}`}
                     alt="Thumbnail"
                 />
@@ -47,24 +47,21 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
                     </Link>
                 </div>
             </div>
-            <div className="mt-4 flex items-center justify-between md:mt-5">
+            <div className="mb-2 mt-4 flex items-center justify-between md:mt-5">
                 <div>
                     <Link
                         href={`/project/${slug}`}
-                        className="pointer-events-auto text-lg font-bold leading-none text-l-primary md:text-2xl"
+                        className="pointer-events-auto text-lg font-bold leading-none text-l-primary dark:text-d-primary md:text-2xl"
                     >
                         {title}
                     </Link>
-                    <p className="text-base text-l-secondary md:text-lg">
+                    <p className="text-base text-l-secondary dark:text-d-secondary md:text-lg">
                         {tag}
                     </p>
                 </div>
                 <Link href={`/project/${slug}`}>
                     <BtnSecondary>
-                        <RiArrowRightLine
-                            className="text-l-primary"
-                            size={22}
-                        />
+                        <RiArrowRightLine size={22} />
                     </BtnSecondary>
                 </Link>
             </div>
