@@ -20,7 +20,7 @@ const Hero = () => {
                     </span>
                 </h1>
             </div>
-            <div className="mx-5 -mt-10 mb-3 flex max-w-screen-xl flex-col-reverse items-start justify-between gap-2.5 rounded-2xl bg-slate-200 px-5 py-5 md:mx-auto md:mb-10 md:mt-1 md:flex-row md:items-center md:gap-4 md:bg-opacity-0 md:px-0 md:py-0">
+            <div className="mx-5 -mt-10 mb-3 flex max-w-screen-xl flex-col-reverse items-start justify-between gap-2.5 rounded-2xl bg-slate-200 px-5 py-5 dark:bg-white/5 md:mx-auto md:mb-10 md:mt-1 md:flex-row md:items-center md:gap-4 md:bg-opacity-0 md:px-0 md:py-0">
                 <BtnPrimary>
                     Lets Talk{" "}
                     <RiArrowRightUpLine className="text-[20px] text-white md:text-[24px]" />

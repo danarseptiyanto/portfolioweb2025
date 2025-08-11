@@ -9,10 +9,8 @@ export default function Home({ projects }) {
     return (
         <>
             <Head title="Danar Septiyanto" />
-            <div className="bg-gradient-to-bl from-transparent via-transparent to-transparent dark:bg-gradient-to-br dark:from-d-accent/50 dark:via-transparent dark:to-transparent">
-                <Navbar />
-                <Hero />
-            </div>
+            <Navbar />
+            <Hero />
             <Projects projects={projects} />
             <Blog />
             <Footer />

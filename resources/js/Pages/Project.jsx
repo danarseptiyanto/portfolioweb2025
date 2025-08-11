@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 const Project = ({ project }) => {
     return (
         <>
-            <Head title="Danar Septiyanto" />
+            <Head title={project.title} />
             <Navbar />
             <Content project={project} />
             <Footer />

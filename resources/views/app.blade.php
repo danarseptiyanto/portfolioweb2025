@@ -8,6 +8,8 @@
     @inertiaHead
   </head>
     <body class="font-sans antialiased bg-l-bg dark:bg-d-bg transition-colors duration-500 ease-in-out">
-    @inertia
+    <div class="absolute bg-gradient-to-b -z-10 w-full top-0 h-screen md:bg-gradient-to-br from-transparent via-transparent to-transparent  dark:from-d-accent/50 dark:via-transparent dark:to-transparent">
+    </div>
+      @inertia
   </body>
 </html>
