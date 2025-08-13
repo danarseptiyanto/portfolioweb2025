@@ -4,3 +4,27 @@
 @tailwind components;
 @tailwind utilities;
 @plugin "@tailwindcss/typography";
+
+:root {
+    --progress: #facc15; /* yellow-400 in light theme */
+}
+
+.dark {
+    --progress: #ef4444; /* red-500 in dark theme */
+}
+
+#nprogress .bar {
+    background: var(--progress) !important;
+    height: 3px;
+}
+
+#nprogress .peg {
+    box-shadow:
+        0 0 10px var(--progress),
+        0 0 5px var(--progress) !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: var(--progress) !important;
+    border-left-color: var(--progress) !important;
+}

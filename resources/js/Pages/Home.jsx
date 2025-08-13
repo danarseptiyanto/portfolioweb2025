@@ -5,13 +5,13 @@ import Projects from "../components/Home/Projects";
 import Blog from "../components/Home/Blog";
 import Footer from "../components/Footer";
 
-export default function Home() {
+export default function Home({ projects }) {
     return (
         <>
             <Head title="Danar Septiyanto" />
             <Navbar />
             <Hero />
-            <Projects />
+            <Projects projects={projects} />
             <Blog />
             <Footer />
         </>

@@ -3,10 +3,10 @@ import { RiArrowRightLine } from "@remixicon/react";
 import BtnPrimary from "../../components/Buttons/BtnPrimary";
 import ProjectsGrid from "../../components/Home/ProjectsGrid";
 
-const Projects = () => {
+const Projects = ({ projects }) => {
     return (
         <>
-            <div className="mx-auto mb-4 mt-9 flex max-w-screen-xl items-center justify-between px-5 md:mb-10 md:mt-12">
+            <div className="mx-auto mb-4 mt-9 flex max-w-screen-xl items-center justify-between px-5 text-l-primary dark:text-d-primary md:mb-10 md:mt-12">
                 <span className="text-xl font-semibold md:text-[57px]">
                     Featured Work
                 </span>
@@ -16,30 +16,15 @@ const Projects = () => {
                 </BtnPrimary>
             </div>
             <div className="gird-cols-1 mx-auto grid max-w-screen-xl gap-5 px-5 md:grid-cols-2 md:gap-7">
-                <ProjectsGrid
-                    title="Belajar Era Digital"
-                    img="thumbnail-project.png"
-                    slug="project"
-                    tag="Web Development"
-                />
-                <ProjectsGrid
-                    title="BEDlink"
-                    img="thumbnail-project2.png"
-                    slug="#"
-                    tag="Web Development"
-                />
-                <ProjectsGrid
-                    title="TicyKit"
-                    img="thumbnail-project2.png"
-                    slug="#"
-                    tag="Web Development"
-                />
-                <ProjectsGrid
-                    title="Danar&Co."
-                    img="thumbnail-project.png"
-                    slug="#"
-                    tag="Web Development"
-                />
+                {projects.map((project) => (
+                    <ProjectsGrid
+                        key={project.id}
+                        title={project.title}
+                        img={project.thumbnail}
+                        slug={project.slug}
+                        tag="Web Development"
+                    />
+                ))}
             </div>
         </>
     );

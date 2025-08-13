@@ -5,12 +5,12 @@ import Content from "../components/Project/Content";
 import Blog from "../components/Home/Blog";
 import Footer from "../components/Footer";
 
-const Project = () => {
+const Project = ({ project }) => {
     return (
         <>
-            <Head title="Danar Septiyanto" />
+            <Head title={project.title} />
             <Navbar />
-            <Content />
+            <Content project={project} />
             <Footer />
         </>
     );
