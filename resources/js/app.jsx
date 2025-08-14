@@ -5,9 +5,9 @@ import { createRoot } from "react-dom/client";
 import { InertiaProgress } from "@inertiajs/progress";
 
 InertiaProgress.init({
-    delay: 250,
+    delay: 0,
     includeCSS: false, // We'll style it ourselves
-    showSpinner: true,
+    showSpinner: false,
 });
 
 createInertiaApp({

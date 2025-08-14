@@ -2,19 +2,27 @@ import { RiMenu4Line, RiCloseLine } from "react-icons/ri";
 import ThemeToggleButton from "./Buttons/ThemeToggleButton";
 import { Link } from "@inertiajs/react";
 import { useState, useEffect } from "react";
+import NavbarMenu from "./Navbar/NavbarMenus";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     // Prevent scrolling when menu is open
     useEffect(() => {
+        const scrollbarWidth =
+            window.innerWidth - document.documentElement.clientWidth;
+
         if (isMenuOpen) {
             document.body.style.overflow = "hidden";
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
         } else {
             document.body.style.overflow = "";
+            document.body.style.paddingRight = "";
         }
+
         return () => {
             document.body.style.overflow = "";
+            document.body.style.paddingRight = "";
         };
     }, [isMenuOpen]);
 
@@ -25,11 +33,18 @@ const Navbar = () => {
     return (
         <>
             <div className="mx-auto flex max-w-screen-xl items-center justify-between px-5 pt-8 md:pt-12">
-                <Link href="/" className="flex items-center gap-2">
-                    <div className="aspect-square rounded-full bg-l-accent p-2.5 md:rounded-none md:p-2">
+                <Link
+                    href="/"
+                    className="relative z-50 flex items-center gap-2"
+                >
+                    <div
+                        className={`aspect-square rounded-full bg-l-accent p-2.5 dark:bg-d-accent md:rounded-none md:p-2 ${isMenuOpen ? "border border-white" : "border border-l-accent dark:border-d-accent"}`}
+                    >
                         <img src="/img/ui/logo-navbar.svg" alt="Logo" />
                     </div>
-                    <h1 className="text-xl text-l-primary md:text-2xl">
+                    <h1
+                        className={`text-xl text-l-primary dark:text-d-primary md:text-2xl ${isMenuOpen ? "text-white" : ""}`}
+                    >
                         <b>danar</b>sept
                     </h1>
                 </Link>
@@ -39,62 +54,19 @@ const Navbar = () => {
                         id="menu"
                         type="button"
                         onClick={toggleMenu}
-                        className="aspect-square gap-1.5 rounded-full border border-l-accent bg-l-accent p-2.5 font-semibold text-white hover:bg-l-accent/90 z-50 relative"
+                        className={`relative z-50 aspect-square gap-1.5 rounded-full bg-l-accent p-2.5 font-semibold text-white hover:bg-l-accent dark:bg-d-accent dark:bg-d-accent/90 ${isMenuOpen ? "border border-white" : "border-0"}`}
                     >
                         {isMenuOpen ? (
-                            <RiCloseLine className="" size={25} />
+                            <RiCloseLine size={25} />
                         ) : (
-                            <RiMenu4Line className="" size={25} />
+                            <RiMenu4Line size={25} />
                         )}
                     </button>
                 </div>
             </div>
 
-            {/* Fullscreen Menu with Animation */}
-            <div 
-                className={`fixed inset-0 bg-l-accent z-40 flex flex-col justify-center items-center transition-transform duration-500 ease-in-out ${isMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
-            >
-                <nav className="text-center">
-                    <ul className="space-y-8">
-                        <li>
-                            <Link 
-                                href="/" 
-                                className="text-4xl font-bold text-white hover:text-opacity-80 transition-colors"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Home
-                            </Link>
-                        </li>
-                        <li>
-                            <Link 
-                                href="/about" 
-                                className="text-4xl font-bold text-white hover:text-opacity-80 transition-colors"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                About
-                            </Link>
-                        </li>
-                        <li>
-                            <Link 
-                                href="/projects" 
-                                className="text-4xl font-bold text-white hover:text-opacity-80 transition-colors"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Projects
-                            </Link>
-                        </li>
-                        <li>
-                            <Link 
-                                href="/contact" 
-                                className="text-4xl font-bold text-white hover:text-opacity-80 transition-colors"
-                                onClick={() => setIsMenuOpen(false)}
-                            >
-                                Contact
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+            {/* Separated Mobile Menu Component */}
+            <NavbarMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
         </>
     );
 };

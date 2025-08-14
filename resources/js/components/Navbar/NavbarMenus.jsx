@@ -14,25 +14,25 @@ const NavbarMenus = ({ isMenuOpen, setIsMenuOpen }) => {
                     <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#blog"
                         title="Home"
                     />
                     <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#blog"
                         title="Curriculum Vitae"
                     />
                     <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#projects"
                         title="Projects"
                     />
                     <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#blog"
                         title="Writings"
                     />
                 </ul>
