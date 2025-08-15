@@ -47,7 +47,7 @@ const ProjectsGrid = ({ title, img, slug, tag }) => {
                     </Link>
                 </div>
             </div>
-            <div className="mb-2 mt-4 flex items-center justify-between md:mt-5">
+            <div className="mb-3 mt-4 flex items-center justify-between md:mb-5 md:mt-5">
                 <div>
                     <Link
                         href={`/project/${slug}`}
