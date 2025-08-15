@@ -2,10 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\ProjectController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/project/{slug}', [ProjectController::class, 'index']);
+Route::get('/article/{slug}', [ArticleController::class, 'index']);
 
 
 // Route::get('/', function () {

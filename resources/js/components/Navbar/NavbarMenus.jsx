@@ -14,26 +14,38 @@ const NavbarMenus = ({ isMenuOpen, setIsMenuOpen }) => {
                     <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#blog"
                         title="Home"
                     />
-                    <Menu
+                    {/* <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#blog"
                         title="Curriculum Vitae"
-                    />
+                    /> */}
                     <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#projects"
                         title="Projects"
                     />
                     <Menu
                         isMenuOpen={isMenuOpen}
                         setIsMenuOpen={setIsMenuOpen}
-                        url="/"
+                        url="/#blog"
                         title="Writings"
+                    />
+                    <Menu
+                        isMenuOpen={isMenuOpen}
+                        setIsMenuOpen={setIsMenuOpen}
+                        url="https://github.com/danarseptiyanto"
+                        title="GitHub"
+                    />
+                    <Menu
+                        isMenuOpen={isMenuOpen}
+                        setIsMenuOpen={setIsMenuOpen}
+                        url="https://www.instagram.com/dnrsept/"
+                        title="Instagram"
                     />
                 </ul>
             </nav>
